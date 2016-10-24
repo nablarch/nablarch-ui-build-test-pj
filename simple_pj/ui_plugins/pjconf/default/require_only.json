@@ -1,0 +1,6 @@
+{
+  "pathSettings" :
+  { "projectRootPath"   : "../.."
+  , "webProjectPath"    : "ui_public/main/web"
+  }
+}

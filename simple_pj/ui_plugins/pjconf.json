@@ -1,0 +1,49 @@
+{
+  "pathSettings" :
+  { "projectRootPath"   : "../.."
+  , "webProjectPath"    : "ui_public/main/web"
+  , "demoProjectPath"   : "ui_demo"
+  , "testProjectPath"   : "ui_test"
+  , "pluginProjectPath" : "ui_plugins"
+  }
+
+, "cssMode" : ["wide", "compact", "narrow"]
+
+, "plugins" :
+  [ { "pattern": "nablarch-css-.*" }
+  , { "pattern": "nablarch-device-.*" }
+  , { "pattern": "nablarch-js-util-.*" }
+  , { "pattern": "nablarch-js-.*" }
+  , { "pattern": "nablarch-(template|widget).*" , "exclude" : [ "multicol" ]}
+  , { "pattern": "nablarch-dev.*"}
+  , { "pattern": "requirejs" }
+  , { "pattern": "sugar" }
+  , { "pattern": "jquery" }
+  , { "pattern": "requirejs-text" }
+  , { "pattern": "font-awesome" }
+  , { "pattern": "less" }
+  , { "pattern": "test.*plugin"}
+  ]
+, "excludedirs" : ["^\\.[^\\.]+", "ignore"]
+, "libraryDeployMappings":
+  { "jquery" :
+    { "dist/jquery.js": "js/jquery.js"
+    }
+  , "requirejs" :
+    { "require.js": "js/require.js"
+    }
+  , "sugar" :
+    { "release/sugar-full.development.js": "js/sugar.js"
+    }
+  , "font-awesome":
+    { "fonts": "fonts"
+    , "css/font-awesome.min.css": "css/font-awesome.min.css"}
+  }
+
+, "imgcopy":
+  { "fromdirs":
+    ["img/base"]
+  , "todirs":
+    ["img/dist"]
+  }
+}
